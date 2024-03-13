@@ -37,10 +37,11 @@ proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt
 [  OK  ] Mounted Arbitrary Executable File Formats File System.
 ...
 [  OK  ] Stopped Parrot products firmware loading daemon.
-[FAILED] Failed to start Parrot products firmware loading daemon.
+[FAILED] Failed to sta[NodeJS Installer](https://nodejs.org/en/download/)rt Parrot products firmware loading daemon.
 See 'systemctl status firmwared.service' for details.
 [  OK  ] Started User Login Management.
 ```
+from this [post](https://forum.developer.parrot.com/t/problems-configuring-the-network-device/7215/4), I try `sudo systemctl daemon-reload` and `sudo systemctl restart firmwared.service` with no success.
 
 ### run Sphinx
 open a new terminal and connect to the container as `docker_user`:
